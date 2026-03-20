@@ -1,0 +1,117 @@
+
+.item-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.item-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.item-content {
+  margin-right: 60px;
+}
+
+.item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.item-description {
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+}
+
+.item-price {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.item-date {
+  color: #999;
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+.item-actions {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  color: #667eea;
+}
+
+.edit-btn:hover {
+  background: rgba(102, 126, 234, 0.1);
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  color: #f44336;
+}
+
+.delete-btn:hover {
+  background: rgba(244, 67, 54, 0.1);
+  transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .item-card {
+    padding: 15px;
+  }
+  
+  .item-content {
+    margin-right: 50px;
+  }
+  
+  .item-title {
+    font-size: 1.1rem;
+  }
+  
+  .item-description {
+    font-size: 0.85rem;
+  }
+}
