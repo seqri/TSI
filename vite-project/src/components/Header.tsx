@@ -19,7 +19,7 @@ class Header extends Component {
           alignItems: 'center'
         }}>
           <Link to="/" style={{
-            color: '#333',
+            color: '#3d3d3d',
             textDecoration: 'none',
             fontSize: '24px',
             fontWeight: '600'

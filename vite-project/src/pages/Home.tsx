@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button } from '../components/Button';
+// import { Button } from '../components/Button';
+import ElementsList from '../components/ElementsList';
 
 class Home extends Component {
   render() {
@@ -9,14 +10,15 @@ class Home extends Component {
 
     return (
       <div className="h-[1500px]">
-        <h1>Главная страница</h1>
-        <p>Важная информация</p>
-        <Button
+        {/* <h1>Главная страница</h1>
+        <p>Важная информация</p> */}
+        {/* <Button
           color="primary"
           size="small"
           title="Добавить товар"
           onClick={handleClick}
-        ></Button>
+        ></Button> */}
+        <ElementsList />
       </div>
       
     );
@@ -24,7 +26,6 @@ class Home extends Component {
 }
 
 export default Home;
-
 
 
 
