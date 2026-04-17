@@ -34,6 +34,7 @@ const AddElementModal: React.FC<AddElementModalProps> = ({ isOpen, onClose, onAd
           <h2 className="text-xl font-bold mb-4 text-pink-500">Добавить элемент</h2>
           <form onSubmit={handleSubmit}>
             <input
+              autoFocus
               type="text"
               placeholder="Название"
               value={title}
